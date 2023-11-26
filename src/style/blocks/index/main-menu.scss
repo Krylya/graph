@@ -1,8 +1,74 @@
-.main-menu__wrap {}
+.main-menu__wrap {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .main-menu {}
+.main-menu__logo {
+  font-size: 30px;
+}
+.main-menu__cell {
+  display: flex;
+  justify-content: space-between;
+}
+.main-menu__open-menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+.main-menu__list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-menu__item {
+  background-image: url("../img/icons/arrow-menu.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: 0 50%;
+  &:hover a {
+    margin-left: 16px;
+  }
+}
+.main-menu__item a {
+  display: block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 18px;
+  color: $primary-text;
+  text-decoration: none;
+  background-color: white;
+  transition: all 300ms ease-in;
+}
+.main-menu__medal-list {
+  display: none;
+}
+.main-menu__medal-item {
+  width: 26px;
+  height: 36px;
+  background-color: slategrey;
+  margin-left: 10px;
+}
 
 
 @media ($tablet-width) {
+  .main-menu__logo {
+    font-size: 3vw;
+  }
+  .main-menu__list {
+    display: block;
+  }
+  .main-menu__open-menu-btn {
+    display: none;
+  }
+  .main-menu__medal-list {
+    display: flex;
+  }
 }// end $tablet-width
 
 @media ($desktop-width) {
