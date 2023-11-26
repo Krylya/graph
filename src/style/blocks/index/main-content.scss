@@ -1,0 +1,13 @@
+.main-content {
+  background-color: $bgnd-color;
+}
+
+@media ($tablet-width) {
+  .main-content {}
+}
+
+@media ($desktop-width) {
+  .main-content {
+    margin-top: 90vh;
+  }
+}// end $desktop-width

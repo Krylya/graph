@@ -5,13 +5,13 @@ html(lang="en")
         meta(name="description" content="")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         title= pageTitle
-        link(rel='stylesheet' href='fonts/LabGrotesque/stylesheet.css')
+        //link(rel='stylesheet' href='fonts/LabGrotesque/stylesheet.css')
         link(rel='stylesheet' href='./style/style.css')
     body
         div.wrapper
-            section.content
-                h1 Pug - node template engine
-                    p.
-                        Pug is a terse and simple templating language with a
-                        strong focus on performance and powerful features.
+            include module/index/main-video
+            div.main-content
+                div.container
+                    include module/index/main-title
+                    include module/index/main-projects
             include module/footer

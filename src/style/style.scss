@@ -2,3 +2,15 @@
 @import "global/variables.scss";
 @import "global/normalize.scss";
 @import "global/layout.scss";
+
+//all
+@import "blocks/footer.scss";
+
+//rows
+@import "rows-cells/rows-cells.scss";
+
+//index
+@import "blocks/index/main-video.scss";
+@import "blocks/index/main-content.scss";
+@import "blocks/index/main-title.scss";
+

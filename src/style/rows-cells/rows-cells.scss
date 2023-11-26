@@ -1,0 +1,48 @@
+.row-two-cell-50 {
+  display: flex;
+  flex-direction: column;
+}
+.row-two-cell-100 {
+  display: flex;
+}
+.main-project-row {
+  margin-bottom: 20px;
+}
+
+.cell {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  //background-color: pink;
+  color: $primary-text;
+  text-decoration: none;
+}
+
+//cell-img
+.cell-img__img {
+  display: block;
+  width: 100%;
+}
+.cell-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.cell-text h3 {
+  margin-bottom: 5px;
+}
+
+@media ($tablet-width) {
+}// end $tablet-width
+
+@media ($desktop-width) {
+  .row-two-cell-50 {
+    flex-direction: row;
+    justify-content: space-between;
+    .cell {
+      width: 49.3%;
+    }
+  }
+  .main-project-row {
+    margin-bottom: 40px;
+  }
+}// end $desktop-width

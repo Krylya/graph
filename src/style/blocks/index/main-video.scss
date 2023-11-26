@@ -1,0 +1,15 @@
+.main-video {
+  height: 70vh;
+  background-color: #a3afb2;
+}
+
+@media ($tablet-width) {}
+
+@media ($desktop-width) {
+  .main-video {
+    height: 90vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+}// end $desktop-width

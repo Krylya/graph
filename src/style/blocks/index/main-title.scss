@@ -1,0 +1,13 @@
+.main-title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media ($tablet-width) {}
+
+@media ($desktop-width) {
+  .main-title {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}// end $desktop-width
